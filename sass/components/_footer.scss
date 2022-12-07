@@ -1,4 +1,24 @@
 .footer-container {
-    display: flex;
-    align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        
+    @media screen and (min-width: $tablet) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0;
+               
+            }
+      
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+        align-items: baseline;
+        
+        }
 }
+    

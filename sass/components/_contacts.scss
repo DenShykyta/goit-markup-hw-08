@@ -1,5 +1,17 @@
 .contact-header-list {
-    display: flex;
+       display: none;
+    
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            gap: 10px;
+            
+        }
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-direction: row;
+        }
 }
 .contact {
     display: flex;
@@ -11,8 +23,12 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    padding: 32px 0;
+    
     transition: color var(--animation);
+
+    @media screen and (min-width: $desktop) {
+            padding: 32px 0;
+        }
 
     &:hover,
     &:focus {
@@ -22,15 +38,20 @@
 
 .contact-header-item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and (min-width: $tablet) {
+            margin: 0;
+    }
+    @media screen and (min-width: $desktop) {
+            margin-right: 50px;
+        }
+    
 }
 
 .contact-header-icon {
     fill: currentColor;
 }
 // FOOTER 
-.footer-adress-container {
-    margin-right: 70px;
-}
 
 .contacts {
     padding-top: 60px;
@@ -38,7 +59,23 @@
 
     background-color: var(--secondary-bg);
 }
-
+.footer-adress-container {
+    text-align: center;
+   
+    @media screen and (min-width: $tablet) {
+            text-align: center;
+            margin: 0 165px 60px 76px;
+        }
+    
+    @media screen and (min-width: $desktop) {
+            margin: 0;
+            margin-right: 70px;
+            text-align: left;
+        }
+}
+.contacts-wrapper {
+    margin-top: 20px;
+}
 .contact-footer-item:not(:last-child) {
     margin-bottom: 9px;
 }

@@ -1,19 +1,32 @@
 .logo {
     font-family: var(--secondary-text-font);
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     color: var(--logo-text-color);
+    padding: 16px 0;
+  
 
-    margin-right: 93px;
+    @media screen and (min-width: $tablet) {
+            font-family: var(--secondary-text-font);
+            font-weight: 700;
+            line-height: 1.19;
+            color: var(--logo-text-color);
+            
+            // margin-right: 88px;
+            padding: 26px 0;
+        }
+    @media screen and (min-width: $desktop) {
+                    font-size: 26px;
+                    margin-right: 93px;
+        }
 
     &-part {
         color: var(--link-text-color);
     }
  &.below {
             color: var(--hero-text-color);
-    
-            display: block;
-            margin-bottom: 20px;
+            padding: 0;
+            
         }
 }

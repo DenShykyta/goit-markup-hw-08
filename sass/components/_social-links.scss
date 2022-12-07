@@ -28,8 +28,12 @@
 // FOOTER
 .footer-social {
     &-container {
-            margin-right: auto;
+            
         }
+
+    @media screen and (min-width: $desktop) {
+                    margin-right: auto;
+                }
     
         &-title {
             font-family: 'Roboto';
@@ -38,6 +42,11 @@
             text-transform: uppercase;
             color: var(--hero-text-color);
             margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+    }
+
+            
         }
     
         &-list {

@@ -1,31 +1,99 @@
 .hero {
     background-color: var(--secondary-bg);
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
 
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+    @media screen and (min-width: $desktop) {
+        padding: 200px 0;
+    }
+
+    max-width: 480px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    // mobile screen
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_sm@1x.jpg);
+    // mobile screen 2x
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_sm@2x.jpg);
+    }
+    // tablet screen
+    @media screen and (min-width: 481px) {
+   
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_md@1x.jpg);
+        
+    // tablet screen 2x
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_md@2x.jpg);
+            }
+            
+        }
+    // tablet screen
+    @media screen and (min-width: 481px) {
+   
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_md@1x.jpg);
+        
+    // tablet screen 2x
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_md@2x.jpg);
+            }
+            
+        }
+    //desktop screen
+        @media screen and (min-width: 769px) {
+    
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_lg@1x.jpg);
+    
+    // desktopt screen 2x
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bh-hero/img_lg@2x.jpg);
+            }
+    
+        }
+
+    @media screen and (min-width: $tablet) {
+            max-width: 768px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            max-width: 1600px;
+            height: 600px;
+        }
 
     &-title {
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
+            font-size: 26px;
+            line-height: calc(42 / 26);
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: var(--hero-text-color);
     
-            width: 696px;
+            width: 360px;
             margin-bottom: 30px;
             margin-left: auto;
             margin-right: auto;
-        }
+
+            @media screen and (min-width: $tablet) {
+                    
+                }
+            
+            @media screen and (min-width: $desktop) {
+                    font-size: 44px;
+                    width: 696px;
+                }
+    }
     &-btn {
             font-family: inherit;
             font-style: inherit;
@@ -37,7 +105,7 @@
             background-color: var(--link-text-color);
             cursor: pointer;
     
-            min-width: 216px;
+            min-width: 200px;
             border-radius: 4px;
             padding: 10px 32px;
             border: none;
@@ -45,7 +113,12 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
             transition: background-color var(--animation);
-    
+
+            @media screen and (min-width: $desktop) {
+                min-width: 216px;;
+             }
+
+
             &:hover,
             &:focus {
                 background-color: var(--btn-active-bg);

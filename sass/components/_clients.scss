@@ -1,21 +1,28 @@
 .clients-section {
     &__title {
             font-weight: 700;
-            font-size: 36px;
+            font-size: 28px;
             line-height: 1.17;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+
+            @media screen and (min-width: $desktop) {
+                font-size: 36px;
+                margin-bottom: 50px;
+    }
+
         }
     
     &__list {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             gap: 30px;
         }
     
     &__link {
-            width: 170px;
+            width: 210px;
             height: 92px;
             display: flex;
             justify-content: center;
@@ -24,6 +31,14 @@
             border-radius: 4px;
             color: var(--icon-color);
             transition: border-color var(--animation), color var(--animation);
+
+            @media screen and (min-width: $tablet) {
+                    width: 226px;
+                }
+            
+            @media screen and (min-width: $desktop) {
+                    width: 170px;
+                }
 
             &:hover,
             &:focus {
