@@ -31,6 +31,11 @@
             color: var(--hero-text-color);
             margin-bottom: 20px;
 
+            @media screen and (max-width: 479px) {
+                    max-width: 100%;
+                    
+                }
+
             @media screen and (min-width: $desktop) {
                   width: 358px;
                 margin-bottom: 0;

@@ -81,7 +81,7 @@ section {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -151,11 +151,16 @@ section {
 @media screen and (min-width: 768px) {
   .nav {
     display: block;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 0;
   }
 }
 
 .nav {
-  margin-right: auto;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -408,7 +413,7 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -479,11 +484,15 @@ section {
   }
 }
 .benefits__item {
-  width: 450px;
+  max-width: 450px;
+}
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -581,7 +590,7 @@ section {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team-section .team-list .team-item {
@@ -748,6 +757,11 @@ section {
   -webkit-transition: border-color var(--animation), color var(--animation);
   transition: border-color var(--animation), color var(--animation);
 }
+@media screen and (max-width: 479px) {
+  .clients-section__link {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-section__link {
     width: 226px;
@@ -841,6 +855,11 @@ section {
   background-color: transparent;
   color: var(--hero-text-color);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 479px) {
+  .footer-form-input {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form-input {
@@ -956,17 +975,24 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
   background: var(--hero-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 

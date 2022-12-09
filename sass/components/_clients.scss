@@ -32,6 +32,11 @@
             color: var(--icon-color);
             transition: border-color var(--animation), color var(--animation);
 
+            @media screen and (max-width: 479px) {
+                    width: 290px;
+                
+                }
+            
             @media screen and (min-width: $tablet) {
                     width: 226px;
                 }
