@@ -109,6 +109,14 @@
     letter-spacing: 0.02em;
     
     color: #2196F3;
+
+    @media (max-width: 479px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            row-gap: 20px;
+            }
 &__item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
