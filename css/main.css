@@ -421,7 +421,7 @@ section {
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .hero-btn {
