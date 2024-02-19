@@ -69,12 +69,12 @@ p {
   margin: 0;
 }
 
-section {
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  section {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -515,7 +515,6 @@ section {
 
 .services-section {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .services-section {

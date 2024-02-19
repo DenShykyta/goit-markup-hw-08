@@ -1,32 +1,29 @@
 .services-section {
-    
-    padding-top: 0;
-    padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-    @media screen and (max-width: 1199px) {
-            display: none;
-        }
+  padding-top: 0;
 
-&__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-&__title {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
-}
+  }
 
-&__item {
+  &__item {
     position: relative;
+  }
 
-}
-
-&__overlay-text {
+  &__overlay-text {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -41,8 +38,5 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--hero-text-color);
+  }
 }
-}
-
-
-
